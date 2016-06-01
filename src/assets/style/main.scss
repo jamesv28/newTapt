@@ -1,0 +1,164 @@
+/******* fonts *******/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+$fireBrick: #B22222;
+$ivory: #FFFFF0;
+$crimson: #DC143C;
+$skyblue : #00B2EE;
+$blue: #1E90FF;
+
+/******* General ******/
+html, body {
+  font-family: 'Raleway', sans-serif;
+  font-size:100%;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+strong {
+  font-weight: 700;
+}
+
+.red {
+  color: $fireBrick;
+}
+
+.line {
+  margin:0 auto;
+  background: $fireBrick;
+  height: 5px;
+  width: 15%;;
+  margin-bottom: 15px;
+}
+.btn-outline {
+  background-color: transparent;
+  color: inherit;
+  transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+  color: $blue;
+}
+
+.btn-success.btn-outline {
+  color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+  color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+  color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+  color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+  color: #fff;
+}
+
+/****** add a class of btn-outline to the buttons *******/
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.header {
+  margin-top: 50px;
+}
+/******** home page ********/
+#homeHead {
+  background: url("http://fc06.deviantart.net/fs70/i/2010/290/9/8/scottish_pub_by_zardo-d30xw62.jpg");
+  -webkit-background-size: cover;
+  background-size:cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  height: 50vh;
+}
+
+#whoWeAre {
+  margin-bottom: 40px;
+}
+
+#map {
+  //background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuA9S6Mv4JLbkzCur8lFVZuAmvudE4tGKdt5w0werCLEf2gsHT");
+  background: url("https://www.lib.utexas.edu/maps/united_states/usa_blank.jpg");
+  -webkit-background-size: cover;
+  background-size:cover;
+  background-position: center center;
+  height: 400px;
+}
+
+#breweryImg {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://visitmontgomery.com/wp-content/uploads/2015/07/Flight.jpg");
+  -webkit-background-size: cover;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  height: 300px;
+  color: $ivory;
+
+}
+/************* beeriodic table **************/
+.beerTypes {
+  text-align: center;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 5px;
+  padding: 20px;
+  border:1px solid black;
+  margin-bottom: 5px;
+  p {
+    font-size: .8rem;
+  }
+
+}
+
+/************** google maps ***************/
+.angular-google-map-container { height: 400px; }
+
+/************ individual beer types **********/
+.beerHeader {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('http://paper4pc.com/images/beer-mug-pint-table-wallpaper-1.jpg');
+  -webkit-background-size: cover;
+  background-size:cover;
+  height:40vh;
+  background-position: center center;
+  background-repeat:no-repeat;
+  color: $ivory;
+  .beerCard {
+    border:5px solid $ivory;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    h1 {
+      text-align: center;
+      mamargin-bottom: 20px;
+    }
+  }
+}
+
+.indBeerDesc {
+  h3, .indBeerDescTitle {
+    color: $fireBrick;
+  }
+  h3 {
+    margin-bottom: 15px;
+  }
+}
+
+/******** google maps **********/
+.angular-google-map-container {
+  height: 100vh;
+  width: 100vw;
+}
