@@ -1,0 +1,36 @@
+<div class="row header">
+    <div class="container-fluid">
+        <h2 class="text-center">Sign Up - It's free</h2>
+        <div class="line"></div>
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <form class="form-horizontal" enctype="application/x-www-form-urlencoded"  ng-submit="signUp()">
+                <div class="form-group">
+                    <label for="name" class="control-label col-md-4 col-sm-4">Name: </label>
+                    <div class="col-md-6 col-sm-6">
+                        <input id="name" type="text" ng-model="user.name" required placeholder="your name" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-md-4 col-sm-4 control-label">Email</label>
+                    <div class="col-sm-6 col-md-6">
+                        <input id="email" type="email" required class="form-control" ng-model="user.email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-md-4 col-sm-4 control-label">Password</label>
+                    <div class="col-sm-6 col-sm-6">
+                        <input type="password" id="password" placeholder="password here" ng-model="user.password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <button style="display: inline;" type="submit" class="col-sm-offset-4 col-md-offset-4 btn btn-primary btn-outline ">Sign Up</button>
+                    <span style="display:inline">
+                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                        Own a brewery?
+                        <a href="#">Register your brewery</a>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

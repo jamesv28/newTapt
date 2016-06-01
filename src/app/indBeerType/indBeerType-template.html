@@ -1,0 +1,84 @@
+<div class="row header beerHeader">
+    <div class="container-fluid">
+        <div class="col-md-2 col-sm-2 col-md-offset-5 col-sm-offset-5 beerCard">
+            <h1>{{beer.symbol}}</h1>
+        </div>
+    </div>
+</div>
+<div class="row indBeerDesc">
+    <div class="container-fluid">
+        <h2 class="text-center">{{beer.name}}</h2>
+        <div class="col-md-10 col-sm-10 col-sm-offset-1 col-md-offset-1">
+            <p>{{beer.description}}</p>
+            <h3 class="text-center">Food Pairings</h3>
+            <i style="margin: auto; display: block; text-align: center; margin-bottom: 15px;" class="fa fa-spoon fa-2x red "></i>
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <img ng-src="assets/img/hamburger2.png" alt="hamburger icon">
+                    &nbsp;<p style="display: inline;">{{food[0]}}</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <img ng-src="assets/img/cheese2.png" alt="cheese icon">
+                    <p style="display: inline;">{{food[1]}}</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <img ng-src="assets/img/cupcake2.png" align="cupcake logo">
+                    <p style="display: inline;">{{food[2]}}</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <h3 class="text-center">Appearance</h3>
+                <div class="line"></div>
+                <p class="indBeerDescTitle"><strong>Color</strong></p>
+                <p>{{ beer.colortxt  }}</p>
+                <p class="indBeerDescTitle"><strong>Clarity</strong></p>
+                <p>{{ beer.clarity }}</p>
+                <p class="indBeerDescTitle"><strong>Visual Carbonation</strong></p>
+                <p>{{beer.carbonationvisual}}</p>
+            </div> <!-- end of appearance -->
+
+            <div class="col-md-3 col-sm-3">
+                <h3 class="text-center">Flavor/Aromatics</h3>
+                <div class="line"></div>
+                <p class="indBeerDescTitle"><strong>Alcohol </strong></p>
+                <p>{{beer.alcoholtxt}}</p>
+                <p class="indBeerDescTitle"><strong>Malt</strong></p>
+                <P>{{beer.malt}}</P>
+                <p class="indBeerDescTitle"><strong>Hops</strong></p>
+                <p>{{beer.hop}}</p>
+                <p class="indBeerDescTitle"><strong>Esters</strong></p>
+                <p>{{beer.esters}}</p>
+                <p class="indBeerDescTitle"><strong>Phenols</strong></p>
+                <p>{{beer.phenols}}</p>
+            </div> <!-- end of flavor -->
+
+            <div class="col-md-3 col-sm-3">
+                <h3 class="text-center">Sensations</h3>
+                <div class="line"></div>
+                <p class="indBeerDescTitle"><strong>Body</strong></p>
+                <p>{{beer.body}}</p>
+                <p class="indBeerDescTitle"><strong>Carbonation</strong></p>
+                <p>{{beer.carbonationtaste}}</p>
+                <p class="indBeerDescTitle"><strong>Finish Length</strong></p>
+                <p>{{beer.finishlength}}</p>
+                <p class="indBeerDescTitle"><strong>Attenuation</strong>&nbsp;
+                    <i tooltip-placement="right" uib-tooltip="attenuation is the percentage that measures the conversion of sugars into alcohol and carbon dioxide by the fermentation process; a more attenuated beer will generally be drier and more alcoholic than a less attenuated beer made from the same wort." class="fa fa-question-circle-o" aria-hidden="true"></i>
+                </p>
+                <p>{{beer.attenuation}}</p>
+            </div><!-- end of sensations -->
+
+            <div class="col-md-3 col-sm-3">
+                <h3 class="text-center">Ingredients</h3>
+                <div class="line"></div>
+                <p class="indBeerDescTitle"><strong>Hops</strong></p>
+                <p>{{beer.hopsingr}}</p>
+                <p class="indBeerDescTitle"><strong>Malt</strong></p>
+                <p>{{beer.maltingr}}</p>
+                <p class="indBeerDescTitle"><strong>Water</strong></p>
+                <p>{{beer.water}}</p>
+                <p class="indBeerDescTitle"><strong>Yeast</strong></p>
+                <p>{{beer.yeast}}</p>
+            </div> <!-- end of ingredients -->
+        </div>
+    </div>
+</div>

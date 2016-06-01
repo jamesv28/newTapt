@@ -1,0 +1,14 @@
+<div class="row header" id="beerTypes">
+    <div class="container-fluid">
+        <h2 class="text-center">Beeriodic Table</h2>
+        <div class="col-md-10 col-sm-10 col-sm-offset-1 col-md-offset-1">
+            <div class="col-md-2 col-sm-2 beerTypes" ng-repeat="beerType in beerTypes" >
+                <a  uib-tooltip="{{beerType.description}}">
+                <h5>{{ beerType.symbol }}</h5>
+                    </a>
+                <p>{{ beerType.alcoholnum }}</p>
+                <a href="#/indBeerTypes/{{ beerType.id }}">View more info</a>
+            </div>
+        </div>
+    </div>
+</div>
