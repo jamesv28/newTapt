@@ -16,4 +16,8 @@ angular
                 url: '/brewOwner',
                 templateUrl: 'app/logging/brewery-owner-template.html'
             })
+            .state('signIn', {
+                url: '/signIn',
+                templateUrl: 'app/logging/signIn-template.html'
+            })
     }); //end of route
