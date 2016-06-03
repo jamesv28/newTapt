@@ -1,6 +1,12 @@
 angular
     .module('app')
-    .config(function ($stateProvider, $urlRouterProvider) {
+    .config(function ($stateProvider, $httpProvider,  $urlRouterProvider) {
+
+        $httpProvider.defaults.headers.common = {};
+        $httpProvider.defaults.headers.post = {};
+        $httpProvider.defaults.headers.put = {};
+        $httpProvider.defaults.headers.patch = {};
+
         $stateProvider
             .state('beerTypes', {
                 url: '/beerTypes',
